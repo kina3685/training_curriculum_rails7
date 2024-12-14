@@ -9,7 +9,7 @@ class CalendarsController < ApplicationController
   # 予定の保存
   def create
     Plan.create(plan_params)
-    redirect_to '/'
+    redirect_to action: :index
   end
 
   private
